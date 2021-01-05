@@ -1,0 +1,717 @@
+Hi! this bot is made using BDFD (bot designer for discord) So im gonna let here ALL the commands of the bot, And i Gonna let the bot and a server, why?: Because i need to correct ANY LITTLE THING, becaus i am gonna publish my bot on top.gg And i need to correct any thing 0of my Bot.
+What I do when i detect a error or something to get better?: Easy, just correct the error and send me in private the new command, How i send you this in private?: Just go to the #quejas-denuncias👮 Cannel and take a ticket
+Bot: https://discord.com/oauth2/authorize?client_id=793257345009975326&scope=bot&permissions=2147483647
+Server: https://discord.gg/xK3zjCxayR
+Commands: 
+Comandos?: M!help
+
+COMANDOS DEL BOT:
+!play : piedra/papel/tijera
+m!emoji : emoji
+!ytsearch (lo que buscas) : buscar youtube
+.votekick (@user) : crear votacion expulsar
+/tell : decir algo
+*dog : fotos perros
+!google (busqueda) : buscar google
+/meme / *randommeme / (meme : meme
+&ttt : ta te ti                                                                                                        s!twitch (canal) : buscar twitch                                             
+!wiki (busqueda) : buscar wikipedia                               
+!8ball (pregunta) : 8ball                                                                                    
+!coinflip : moneda
+!anyminsult (ORACION+@user) : habalr anonimo
+!!!dice : tirar dado
+/clap : aplaudir
+!dance : bailar
+!hug (@user) : abrazar 
++kill (@user) :  matar 
+~kiss (@user) : besar 
+e!rr : ruleta rusa
+^TorD (@user) : true/false
+!sleep : ir a dormir
+p/marry (@user) : proponer casamiento                                                                     p/mdecline (@user) : rechazar propuesta                                                                           p/maccept (@user) : aceptar propuesta                                                                      p/mdivorce (@user) : divorciarse
+/deathnote (@user) : death note
+?reddit (r/ejemplo) : ver reddit
+!hack (@user) : hack
+!emoji : animal
+!spirit animal : alma animal 
+!triggered (@user) : ENOJO
+!covid test : test cov
+!avatar (@user) : BIG AVATAR
+~lovecheck (@user) : %AMOR
+$shoot (@user) : shoot
+!eject (@user) true/false : EJECT AMONG US
+!stonks : STONK
+!not stonks : NO STONK
+/clyde (ORACION) : Foto clyde bot
+/match (@user) : TINDER MATCH
+/trumpsay (oracion) : TWEET TRUMP
+/fortniteshop : FORTNITE SHOP
+!pokemon : POKE BATTLE
+/battle : WAR
+!lyrics (cantanteCANCIONlyrics) : LYRICS CANCION
+/guessnumber (0-10) : ADIVINA NUMERO
+
+/n help : ECONOMIA
+
+/helpmod : MODERACION
+
+APIs: 
+command: Rock, paper scissors (!play)    variable: Anyone
+$nomention
+$title[Rock, Paper, Scissors!]
+$description[You selected $message - Bot selected $randomText[Rock;Paper;Scissors!].]
+
+command: Random emoji (m!emoji)  variable: Anyone
+$nomention
+$randomText[😀;😁;😂;😃;😄;😅;😆;😉;😊;😋;😎;😍;😘;😗;😙;😚;☺;🙂;🤗;🤔;😐;😑;😶;🙄;😏;😣;😥;😮;🤐;😯;😪;😫;😴;😌;😛;😜;😒;😓;😔;😕;🙃;🤑;😲;🙁;😖;😞;😟;😤;😢;😭;😦;😧;😨;😩;😬;😰;😱;😳;😵;😡;😠;😷;🤒;🤕;😇;🤓;👻;👽;🤖;👶;👦;👧;👨;👩;👴;👵;👮;🕵;👷;👸;👳;👲;👱;👰;👼;🎅;🙍;🙎;🙅;🙆;💁;🙋;🙇;💆;💇;💃;👯]
+
+command: Youtube Video Serach (!ytsearch)    variable: Anyone
+$nomention
+https://m.youtube.com/results?search_query=$message
+$argsCheck[1;Please include 1 word. Spaces are not supported, use + for that. Example: `!ytsearch test+command`]
+
+command: Votekick (.votekick) variable: Anyone
+$nomention
+$color[ff0000]
+$title[Votekick 🗳️]
+$description[Should $message be banned from the server?]
+$addReactions[👍;👎]
+$footer[$username - VoteKick Creator]
+
+command: Tell (/tell ) variable: Anyone
+$nomention
+$deletecommand
+$author[$username] $authorIcon[$authorAvatar]
+$description[$message]
+
+command: Dog photo (*dog) variable: Anyone
+$nomention
+$color[#f000]
+$author[A doggy ♥️]
+$image[$randomText[https://www.reddit.com/r/aww/comments/bpq14w/it_took_me_26_years_to_get_my_first_puppy_and_i/;https://cdn.weeb.sh/images/SyeA0oENtG.jpeg;https://cdn.weeb.sh/images/HyGYnNVKz.gif;https://cdn.weeb.sh/images/SkVxjV4Ff.jpeg;https://cdn.weeb.sh/images/HyWFtTCYf.jpeg;https://cdn.weeb.sh/images/HkbVMhVNKf.jpeg]]
+
+command: clear chat ($!clear) variable: Anyone 
+$nomention
+$onlyPerms[managemessages; 🚨 Missing Permissions - Manage Messages!] 
+$description[:white_check_mark: Deleted all messages!]
+$footer[Deleted by $username] 
+$color[$random[0;999999]]
+$clear[100]
+
+command: !!userInfo (!!userinfo) variable: Anyone 
+$nomention
+$color[#0000ff]
+$userInfo[
+Username: {username}
+Verified: {verified}
+ID: {ID}
+Is a bot: {BOT}
+userInfo[{username}#{discriminator}]$image[$userAvatar[$mentioned[1]]] 
+$title[**Avatar  <@$mentioned[1]>**] $nomention
+$allowMention
+$color[#ff0000]
+
+command: meme (/meme) variable: Anyone 
+$nomention
+https://m.9gag.com/gag/$random[1050;1199]
+
+command: meme (*randommeme) variable: Anyone 
+$nomention
+$title[meme generator]
+https://imgflip.com/i/3sv$randomString[3]
+$footer[made by Frick inredients splits creek#1127]
+
+command: tic tac toe (&ttt) variable: Anyone
+$nomention
+$title[@{user}]
+$description[wait karo command aa rahi hai]
+$footer[made by dev||saini]
+$color[ffffff]
+$image[https://cdn.discordapp.com/attachments/763117847450353738/764309103874539540/image0.jpg]
+
+command: twitch busqueda (s!twitch) variable: Anyone
+$nomention
+$thumbnail[https://pngimg.com/uploads/twitch/twitch_PNG18.png]
+$title[🔎 Twitch search...]
+$description[https://m.twitch.tv/search?term=$replaceText[$message; ;%20;-1]]
+$color[6441A4]
+$footer[BOT by E-Tech Studios | !⎝ተጫዋች⎠#8681]
+$deletecommand
+
+command: wikipedia busqueda (!wiki) variable: Anyone
+$nomention
+$author[Searching...]
+$title[Klick to open Wikipedia]
+$embeddedURL[https://en.wikipedia.org/wiki/$replaceText[$message; ;_;-1]]
+$authorIcon[https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png]
+$argsCheck[>0;**Usage: !wiki <description>]
+$onlyNSFW[this is not a nsfw channel!]
+
+command: 8ball (!8ball) variable: Anyone
+$nomention
+$title[:8ball: 8Ball]
+$description[
+$addField[Question:;$message]
+$addField[Answer:;$randomText[Yes;no;Probably;Very doubtful]]]
+
+command: coinflip (!coinflip) variable: Anyone
+Look out! The coin is flipping And its gonna be...
+$randomText[Head;Tail]
+
+command: AnymInsult (/anymInsult) variable: Anyone
+$nomention
+$title[Insult]
+$description[You got anonymously Insulted, the insult: $message[2] $message[3] $message[4] $message[5] $message[6] $message[7] $message[8] $message[9] $message[10] $message[11] $message[12] $message[13] $message[14] $message[15]$message[16] $message[16] $message[17] $message[18] $message[19] $message[20] $message[21]$message[22] $message[23] $message[24] $message[25] $message[26] $message[27] $message[28]$message[29] $message[30] $message[31] $message[32] $message[33] $message[34] $message[35]]
+$footer[Anonymous Insult]
+$color[7c0000]
+$addReactions[😣]
+$dm[$message[1]]
+$deletecommand
+$addTimestamp
+$onlyIf[$userExists[$message[1]]==true;❌ The userID isn't of a valid user.]
+$argsCheck[>2;❌ Somethig went wrong. Try again. [/anymInsult (userID) (message (35 words max.))]
+
+command: roll a dice  (!!!dice) variable: Anyone
+You rolled a $random[1;6]!
+
+command: clap (/clap) variable: Anyone
+$nomention
+$replaceText[$message; ; 👏 ;-1]
+
+command: dance (!dance) variable: Anyone
+$nomention
+$title[$username esta bailando owo]
+$description[   ]
+$footer[  ]
+$color[ffffff]
+$image[$randomText[https://images-ext-1.discordapp.net/external/1gWOXOdpUmv5-v162i_hBYw6B-Ib1-M1doXan9RIOLY/https/media.discordapp.net/attachments/758451892770308139/758697217614676008/dance1.gif;https://cdn.discordapp.com/attachments/758451892770308139/758692425597845524/4234.gif;https://cdn.weebs.cl/images/lgUZaTiC.gif;https://cdn.discordapp.com/attachments/758451892770308139/758692352511705129/1424124.gif;https://cdn.discordapp.com/attachments/758451892770308139/758692365963231272/424234.gif;https://cdn.discordapp.com/attachments/758451892770308139/758692394324459530/42424634.gif;https://cdn.discordapp.com/attachments/758451892770308139/758692401765941268/123123.gif;https://i.pinimg.com/originals/fa/67/33/fa673319e5eec37d4b6ba7c8e110b656.gif]]
+
+command: hug (!hug) variable: Anyone
+$message you got a hug from $mention
+https://cdn.discordapp.com/attachments/574917365012234290/584720549452709913/original.gif
+
+command: kill (+kill) variable: Anyone
+$authorIcon[Ссылка на картинку сервера]
+$author[Названия сервера]
+$deletecommand
+$nomention
+$footer[Заказал(а) $username]
+$footerIcon[$authorAvatar]
+$description[
+<@$mentioned[1]>🔫был(a) убит(a) снайпером!]
+
+command: russian roulette  (e!rr) variable: Anyone
+$title[Russian Roulette]
+$description[Do you wanna play a game?]
+$addField[Result;$randomText[Poof, you got a Blank;Poof, you got a Blank;Poof, you got a Blank;Poof, you got a Blank;Poof, you got a Blank; BOOM, you're dead...]]
+$nomention
+$color[#56FFE7]
+
+command: truth or dare (^TorD) variable: Anyone
+$title[💯 is truth & ❌ is dare]
+$nomention
+$description[Should the user $message pick Truth or Dare? ]
+$addReactions[💯;❌]
+$footer[$username - created by the user]
+
+command: sleep (!sleep) variable: Anyone
+$nomention
+$title[$username parece que se durmio]
+$color[ff702]
+$description[descanza bien unu]
+$image[$randomText[https://tenor.com/view/himouto-umaru-dormir-anime-gif-9219481;https://tenor.com/view/aoharuride-dormir-anime-gif-9214366;https://tenor.com/view/dormir-gif-8173446]] 
+
+command: marry (p/marry) variable: marry
+$nomention
+$argsCheck[>1;No mencionaste a nadie]
+$onlyIf[$getUserVar[marry]==notmarried;Ya estás casado]
+$setUserVar[marry;yes;$mentioned[1]]
+$description[**<@$mentioned[1]>**, ¿quieres casarte con **<@$authorID>**? Usa __p/maccept (@usuario)__ para aceptar o __p/mdecline (@usuario)__ para rechazar]
+$color[8900bd]
+$footer[p/marry (@usuario)]
+$footerIcon[$serverIcon]
+$image[https://i.imgur.com/lyVPDmA.png]
+
+command: decline marry (p/mdecline) variable: marry
+$nomention
+$argsCheck[>1;No mencionaste a nadie]
+$onlyIf[$getUserVar[marry]==yes;]
+$setUserVar[marry;notmarried]
+**<@$authorID>** rechazó a <@$mentioned[1]>
+$suppressError[No mencionaste a nadie]
+
+command: accept marry (p/maccept) variable: marry
+$nomention
+$argsCheck[>1;No mencionaste a nadie]
+$onlyIf[$getUserVar[marry]==yes;Ya estás casado]
+$setUserVar[marry;no]
+$setUserVar[marry;no;$mentioned[1]]
+**<@$authorID>** y **<@$mentioned[1]>** se han casado. Usa __p/divorce (@usuario)__ para divorciarte
+$suppressErrors[No mencionaste a nadie]
+
+command: divorce (p/mdivorce) variable: marry
+$nomention
+$argsCheck[>1;No mencionaste a nadie]
+$setUserVar[marry;notmarried]
+$onlyIf[$getUserVar[marry]==no;No estás casado]
+**<@$authorID>** te has divorciado de <@$mentioned[1]>
+
+command: deathnote (/deathnote) variable: anyone
+$nomention
+$title[Sasuke (サスケ) **DeathNote**]
+$description[<@$mentioned[<]> You Die For Heart Attack In 40 Seconds, Goodbye]
+$image[https://66.media.tumblr.com/7dc839e52b713aff9d37b39db16d0bc1/tumblr_ovat003Xo01wzsjlzo1_640.gif]
+$footer[$username]
+$addCmdReactions[🎃]
+$addTimestamp
+$color[E1CB25]
+$onlyIf[$mentioned[<]!=;❌ • **Use /deathnote @Member**]
+
+command: reddit search (?reddit) variable: anyone
+$nomention
+$color[ff0101]
+$authorIcon[https://cdn.discordapp.com/attachments/640785449350332438/677805716458962993/2000px-Reddit_logo_orange.svg-1.png]
+$author[Reddit Search]
+$description[Search Reddit...
+https://www.reddit.com/search?q=$message
+Search: **$message**
+Author: **$username**]
+
+$deletecommand
+
+command: spirit animal (!spirit animal) variable: anyone
+$nomention
+$description[ $randomText[🐶;🐹;🐻;🐯;🐷;🐵;🐱;🐰;🐼;🦁;🐭;🦊;🐨;🐮;🐸;🙉;🐔;🐧;🦅;🐺;🦉;🐗;🦇<🦄;🐝;🐢;🐙;🦕;🦖;🦞;🦧;🦍;🐋;🦈;🐳;🦓;🐆;🐅;🐘;🐃;🐑;🦦;🦝;🦨;🕊;🦜;🦔;🐿;🦥;🐀].]
+
+command: animal emoji random (!emoji) variable: anyone
+$nomention
+$randomText[🐕;🐶;🐩;🐈;🐱;🐀;🐁;🐭;🐹;🐢;🐇;🐰;🐓;🐔;🐣;🐤;🐥;🐦;🐏;🐑;🐐;🐺;🐃;🐂;🐄;🐮;🐴;🐗;🐖;🐷;🐽;🐸;🐍;🐼;🐧;🐘;🐨;🐵;🐆;🐯;🐻;🐫;🐪;🐊;🐳;🐋;🐟;🐠;🐡;🐙;🐚;🐬;🐌;🐛;🐜;🐝;🐞;🐲;🐉;🐾]
+
+command: """""hack"""""" (!hack) variable: anyone
+$nomention  $allowMention
+$argsCheck[1; Wrong command usage! Please make sure you mentioned someone.]
+
+Hacking $message...
+
+$botTyping
+$editIn[5s; Successfully hacked $message !
+**Email:** $randomText[Ileak388@hotmail.com; ronDanielfir@gmail.com;dankmmmemememe@yahoo.com; recklskenn@yahoo.com; holyshees4456@gmail.com; hackmeifucan@hotmail.com; subtoquitzlol@yahoo.com;holyfuck666@yahoo.com; coronavirus@gmail.com; websckamtty@hotmail.com; duckGang677@gmail.com]
+**Password:** $randomText[87fgh09;hailNightt64;bluefaceju866;duckforlife65;realboossjj;danivashy9889;corona<333;skechers6557;0983866d]]
+
+command: triggered (!triggered) variable: anyone
+$nomention
+$argsCheck[1;Menciona a una persona]
+$title[>:(]
+$image[https://useless-api.vierofernando.repl.co/triggered?image=$userAvatar[$mentioned[1]]&increment=5]
+$footer[Pedido por $username]
+$color[$random[12345;67890]]
+$addTimestamp
+$botTyping
+
+command: help (M!help) variable: anyone
+Comandos?: M!help
+
+COMANDOS DEL BOT:
+!play : piedra/papel/tijera
+m!emoji : emoji
+!ytsearch (lo que buscas) : buscar youtube
+.votekick (@user) : crear votacion expulsar
+/tell : decir algo
+*dog : fotos perros
+!google (busqueda) : buscar google
+/meme / *randommeme / (meme : meme
+&ttt : ta te ti                                                                                                        s!twitch (canal) : buscar twitch                                             
+!wiki (busqueda) : buscar wikipedia                               
+!8ball (pregunta) : 8ball                                                                                    
+!coinflip : moneda
+!anyminsult (ORACION+@user) : habalr anonimo
+!!!dice : tirar dado
+/clap : aplaudir
+!dance : bailar
+!hug (@user) : abrazar 
++kill (@user) :  matar 
+~kiss (@user) : besar 
+e!rr : ruleta rusa
+^TorD (@user) : true/false
+!sleep : ir a dormir
+p/marry (@user) : proponer casamiento                                                                     p/mdecline (@user) : rechazar propuesta                                                                           p/maccept (@user) : aceptar propuesta                                                                      p/mdivorce (@user) : divorciarse
+/deathnote (@user) : death note
+?reddit (r/ejemplo) : ver reddit
+!hack (@user) : hack
+!emoji : animal
+!spirit animal : alma animal 
+!triggered (@user) : ENOJO
+!covid test : test cov
+!avatar (@user) : BIG AVATAR
+~lovecheck (@user) : %AMOR
+$shoot (@user) : shoot
+!eject (@user) true/false : EJECT AMONG US
+!stonks : STONK
+!not stonks : NO STONK
+/clyde (ORACION) : Foto clyde bot
+/match (@user) : TINDER MATCH
+/trumpsay (oracion) : TWEET TRUMP
+/fortniteshop : FORTNITE SHOP
+!pokemon : POKE BATTLE
+/battle : WAR
+!lyrics (cantanteCANCIONlyrics) : LYRICS CANCION
+/guessnumber (0-10) : ADIVINA NUMERO
+
+/n help : ECONOMIA
+
+/helpmod : MODERACION
+
+$message
+
+command: covid test (!covid test) variable: anyone
+$nomention
+$title[Covid Test☠]
+$description[la prueba esta en curso $editIn[3s;resultado de la prueba:   
+$randomText[Positivo,debes escribir "cuarentena;Negativo;Negativo]]] $addReactions[☠;😀;😭]
+
+command: Avatar (!Avatar) variable: anyone
+$title[**🖼Avatar do usuário**]
+$nomention
+$description[
+<@$mentioned[1]> **Que bela foto!!**]
+
+$allowMention
+$image[$userAvatar[$mentioned[1]]]
+$color[#FFFAFA]
+$footer[Pedido por $username]
+
+command: lovehceck (~lovecheck) variable: anyone
+$title[L'amour est un sentiment formidable 💕]
+$description[La force de ce sentiment entre $username et <@$mentioned[1]> est de $random[0;100]% 💕💕💕]
+$color[FFC0CB]
+$nomention
+
+command: shoot ($shoot) variable: anyone
+$nomention
+$argsCheck[>1;❌** | Menciona a un usuario**]
+$title[A $username[$mentioned[1]] le van a disparar!]
+$image[https://api.no-api-key.com/api/v2/shoot?image=$userAvatar[$mentioned[1]]]
+$footer[Comando por Exaedro!]
+]
+$color[$random[0;999999]]
+$addTimestamp
+$botTyping
+
+command: not stonks (!not stonks) variable: anyone
+$nomention
+$onlyIf[$message!=;Write something!]
+ 
+$color[$random[111111;999999]]
+$image[https://niserywi.sirv.com/mememememmeme/ERbi8HWW4AEscvO.jpg?text.0.text=$replaceText[$message; ;+;-1]&text.0.position.gravity=northeast&text.0.size=0&text.0.color=ffffff]
+
+command: Among Us Eject Command (!eject) variable: anyone
+$nomention
+$argsCheck[>2;`eject <@user> <true|false>`]
+$title[📤 $username[$mentioned[1]] was ejected!]
+$image[https://vacefron.nl/api/ejected?name=$username[$mentioned[1]]&imposter=$message[2]&crewmate=$randomText[red;cyan;blue;purple;white;pink;brown]]
+
+command: meme ((meme) variable: anyone
+$nomention
+$color[$random[111111;999999]]
+$image[https://ctk-api.herokuapp.com/meme/$random[1;500]]
+
+command: stonks (!stonks) variable: anyone
+$nomention
+$color[$random[111111;999999]]
+$image[https://vacefron.nl/api/stonks?user=$userAvatar[$mentioned[<;yes]]?size=4096]
+
+command: clyde (/clyde) variable: anyone
+$nomention
+$onlyIf[$message!=;Type something!]
+$color[$random[111111;999999]]
+$image[https://ctk-api.herokuapp.com/clyde/$replaceText[$message; ;%20;-1]]
+
+command: tinder match (/match) variable: anyone
+$onlyIf[$mentioned[<]!=;Mention someone to match!]
+$nomention
+$color[$random[111111;999999]]
+$description[It's a match! **$username[$authorID]** & **$username[$mentioned[<]]**]
+$image[https://useless-api.vierofernando.repl.co/tinder?image1=$userAvatar[$authorID]?size=1024&image2=$userAvatar[$mentioned[<]]?size=1024]
+
+command: trump tweet (/trumpsay) variable: anyone
+$nomention
+$onlyIf[$message!=;Type something!]
+ 
+$color[$random[111111;999999]]
+$image[https://api.no-api-key.com/api/v2/trump?message=$replaceText[$message; ;+;-1]]
+
+command: Fortnite shop (/fortniteshop) variable: anyone
+$nomention
+$color[$random[111111;999999]]
+$description[Today's fortnite shop]
+$image[https://api.nitestats.com/v1/shop/image?footer=%20Get%20free%20APIs%20on%20BDFD%20Codes-APis:%20http://gg.gg/sharecodes&background=00000014.png]
+
+command: comandos de economia (/n help) variable: anyone
+$nomention
+$title[COMANDOS ECONOMIA]
+$color[#ffaaaa]
+$description[COMANDOS ECONOMIA]
+
+/work : trabajar
+/beg : rogar
+/daily : dinero del dia 
+/crime : jurto
+/heist : robo
+/deposit : depositar en banco
+/balance : Balance de dinero
+/withdraw : RETIRAR PLATA DEL BANCO
+/givemoney : dar dinero
+/leaderboard : tabla de posiciones
+/buyfood : comprar comida
+/buyhouse : comprar casa
+/buymansion : comprar mansion
+/sueldo : sueldo
+
+M!help : para comandos de diversion
+/helpmod : COMANDOS MODERACION
+
+$footer[$username sent a message at $hour:$minute:$seconds]
+$footerIcon[$authorAvatar]
+
+commands: economia (https://pastebin.com/pz5Mynpk) variables: bank and money.
+
+command: pokemon (!pokemon) variable: anyone
+$nomention
+$username sends out their $randomText[Bidoof, who's defeated by ;Flygon, who wins against;Toxtricity, who wins against;Mew, who loses to;Darmanitan, who loses to;Weavile, who loses to;Charizard, who wins against;Garchomp, who wins against;Lurcario, who wins against] bot's $randomText[Gengar;Machamp;Furret;Dieno;Woolo;Snom;Dragonite; Zigzagoon]
+
+command: battle (/battle) variable: anyone
+$nomention
+$title[**$username**]
+$description[$randomText[**You have losed this round, the enemy was to powerful!**;**You have won! The enemy didn't stand a chance!**]] 
+
+$footer[You launched $random[1;11] ships, $random[1;9] rockets, $random[1;7] nukes, and $random[1;101] troops. The enemy team launched $random[1;12] ships, $random[1;8] rockets, $random[1;5] nukes, and $random[1;100] troops.] 
+
+
+$addCmdReactions[$randomText[🔫;⚔️;🛡️;☣️]] 
+
+command: remove bad wards (/remove bad words) variable: anyone
+$nomention
+
+$onlyPerms[ManageMessages;You don't have manage messages perm]
+
+$argsCheck[1;Try !remove bad words <@mention>]
+
+$description[I have removed all the messages by <@mentioned[1]> which contains bad words]
+$footer[Action by $username]
+$footerIcon[$authorAvatar]
+
+$deletecommand
+$deleteIn[3s]
+$color[00ff24]
+
+$removeContains[gay;porn;fuck;nigga;asshole;ass;bitch;fucker;motherfucker;madarchod;bhosdike;laudre;laude;chotiya;gandu;cunt;sisterfucker;behenchod;chod;shit;@ss;@$$;a$$;fuckk;hoe;FUCK;NIGGA;ASSHOLE;ASS;BITCH;FUCKER;MOTHERFUCKER;MADARCHOD;BHOSDIKE;LAUDRE;LAUDE;CHOTIYA;GANDU;CUNT;SISTERFUCKER;GAY;PORN;BEHENCHOD;CHOD;SHIT;@SS;A$$;FUCKK;HOE;NIGGER;NIGGLET;Fuck;Gay;Porn;Nigga;Asshole;Ass;Bitch;Fucker;Motherfucker;Madarchod;Bhosdike;Laudre;Laude;Chotiya;Gandu;Cunt;Sisterfucker;Behenchod;Chod;Shit;@ss;@$$;A$$;Fuckk;Hoe;Fuck;Nigga;Asshole;Ass;Bitch;Fucker;Motherfucker;Madarchod;Bhosdike;Laudre;Laude;Chotiya;Gandu;Cunt;Sisterfucker;Behenchod;choto;puto;CHOTO;Choto;gordo;Gordo;GORDO;pvto;PVTO;Pvto;Pvta:pvta;PVTA;PUTA;Puta;puta;sorete;SORETE;Sorete;TROLLO;TROLO;Trollo;Trolo;trolo;trollo; poronga;PORONGA;Poronga;choto:Choto;CHOTO;CHOTITO;Chotito;chotito;pene;Pene;PENE;Cifilitica;CIFILITICA;cifilitica;Aborto;ABORTO;aborto;PUTO;Puto;Chod;Shit;@ss;@$$;A$$;Fuckk;Hoe;100]
+
+command: lyrics (!lyrics) variable: anyone
+$nomention
+$color[#f442c8]
+$footerIcon[https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2000px-Google_%22G%22_Logo.svg.png]
+$author[Google Search]
+$footer[By Google]
+$description[Search Google... https://www.google.com/search?q=$message
+Search : $message
+Author : $username]
+
+command: google search (!google) variable: anyone
+$nomention
+$color[#f442c8]
+$footerIcon[https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2000px-Google_%22G%22_Logo.svg.png]
+$author[Google Search]
+$footer[By Google]
+$description[Search Google... https://www.google.com/search?q=$message
+Search : $message
+Author : $username]
+
+command: guess number (/guessnumber) variable: anyone
+$nomention
+$replaceText [$replaceText[$checkCondition[$random[0;10]==$message[1]];true;You guessed$message[1] , and  I  said $random[0;10]You guessed right! ;1]
+ ;false;You guessed $message[1] , and I said $random[0;10], you guessed wrong. ;1]
+ 
+ command: buyfood (/buyfood) variable: FOOD
+ $setUserVar[money;$sum[$getUserVar[money];-100]]
+$setUserVar[FOOD;$sum[$getUserVar[FOOD];1]] You have bought FOOD!
+$cooldown[2h;Dont people hate spend? come back in %time% to buy food again.]
+
+command: buyfood (/buyfood) variable: FOOD
+$setUserVar[money;$sum[$getUserVar[money];-100]]
+$setUserVar[FOOD;$sum[$getUserVar[FOOD];1]] You have bought FOOD!
+$cooldown[2h;Dont people hate spend? come back in %time% to buy food again.]
+
+command: ban (/ban) variable: anyone
+$nomention $message got banned. $ban
+
+command: kick (!!kick) variable: anyone
+$nomention $kickMention
+$onlyAdmin[**Only Admins can use this command.**]
+
+command: mute (.mute) variable: anyone
+$argsCheck[>1; Porfavor mencione a pessoa para mutar]
+$nomention $mute[Muted]
+$onlyPerms[manageroles;<:error:581372917737193472>**You don't have enough permissions to run this command.**]
+$title[**Mute**]
+$color[#FF0000]
+$footer[Muted by $username.]
+$description[
+
+Mutado: <@$mentioned[<]>
+Mutado  por: <@$authorID>
+Reação: $noMentionMessage
+]
+
+command: unmute (?!unmute) variable: anyone
+$onlyPerms[ManageRoles;You require `ManageRoles` permission for this to work.]
+$nomention
+$message was unmuted
+$unmute[Muted]
+
+command: unban (.unban) variable: anyone
+$nomention
+$title[UnBan]
+$color[00FF00]
+$description[$message was desbanned by $username!]
+$deletecommand
+
+command: warn (/warn) variable: warns and warn
+$nomention
+ 
+$onlyPerms[manageserver;:x:** | No podes usar este comando**]
+ 
+$argsCheck[>1;:x:** | Menciona a un usuario**]
+ 
+$argsCheck[>2;:x:** | Escribi la razon del warn**]
+ 
+$setUserVar[warn;$sum[$getUserVar[warn];1];$mentioned[1]]
+ 
+$title[Usuario warneado]
+$addField[Usuario;$username[$mentioned[1]]#$discriminator[$mentioned[1]]]
+$addField[Mod/Admin;$username#$discriminator[$authorID]]
+$addField[Razon;$noMentionMessage]
+$addTimestamp
+$footerIcon[$authorAvatar]
+$color[$random[0;999999]]
+
+command: giverole (!chooserole) variable: anyone
+$nomention
+$onlyPerms[manageroles;❌ You're missing the permission.]
+$giveRole[$mentionedRoles[<]]
+✔️ Successfully adds role to the user
+
+command: Help MODERACION (/helpmod) variable: anyone
+Comandos?: M!help
+
+COMANDOS DE MODERACION:
+/ban (@user) : banear 
+!!kick (@user) : kickear
+.mute (@user) : mutear
+?!unmute (@user) : unmutear
+.unban (@user) : unbanear
+/warn (@user) : warn
+dk!removewarns (@user) : remove warns RETIRA 1 WARN
+#checkwarns (@user) : ver warns 
+/resetwarn (@user/@everyone) : reset warns
+!chooserole (@role+@user) : dar role
++changenick (@user) : cambiar nick
+/clearall (#CANAL) : eliminar ALGUNOS mensajes de un canal
+!new : para un ticket
+
+
+/n help : ECONOMIA
+
+$message
+
+command: change nickname (+changenick) variable: anyone
+$nomention
+$changeUsername[$noMentionMessage]
+$title[CHANGED NAME]
+$color[#0000ff] 
+$description[You changed $username[$mentioned[<]]'s username to $noMentionMessage] 
+$argsCheck[>1;Wrong;]!changename @user <number>]
+
+command: remove 1 warn (dk!removewarns) variable: warn, warns
+$nomention
+ 
+$onlyPerms[manageserver;:x:** | No podes usar este comando**]
+ 
+$argsCheck[>1;:x:** | Menciona a un usuario**]
+ 
+$setUserVar[warn;$sub[$getUserVar[warn];1];$mentioned[1]]
+ 
+$title[Usuario unwarneado]
+$addField[Usuario;$username[$mentioned[1]]#$discriminator[$mentioned[1]]]
+$addField[Mod/Admin;$username#$discriminator[$authorID]]
+$addTimestamp
+$footerIcon[$authorAvatar]
+$color[$random[0;999999]]
+
+command: checkwarn (#checkwarn) variable: warn, warns
+$nomention
+ 
+$onlyPerms[manageserver;:x:** | No podes usar este comando**]
+ 
+$argsCheck[>1;:x:** | Menciona a un usuario**]
+ 
+$author[$username[$mentioned[<;yes]]]
+$authorIcon[$userAvatar[$mentioned[<;yes]]]
+$title[Cantidad de warns: **$getUserVar[warn]**]
+$addTimestamp
+$color[$random[0;999999]]
+
+command: reset wrans (/resetwarn) variable: warn, warns
+$resetUserVar[warn]
+$description[You have reset your warn]
+$onlyAdmin[You don't have permission to use this command. ]
+
+command: Clear SOME messages of a chat (/clearall) variable: anyone
+$nomention
+$onlyAdmin[`❌ You Don't Have Permission To Use This Command`]
+$deletecommand
+$suppressErrors
+$clear[10000000000000]
+
+command: buy house (/buyhouse) variable: house
+$setUserVar[money;$sum[$getUserVar[money];-10000]]
+$setUserVar[house;$sum[$getUserVar[house];1]] You have bought a house!
+$cooldown[7d;YOU NEED TO PAY TAX TO LIVE HERE?!! come back in %time% to buy a house again.]
+
+command: buy mansion (/buymansion) variable: mansion
+$setUserVar[money;$sum[$getUserVar[money];-1000000]]
+$setUserVar[mansion;$sum[$getUserVar[mansion];1]] You have bought a mansion!
+$cooldown[7d;YOU NEED TO PAY TAX TO LIVE HERE?!! come back in %time% to buy a mansion again.]
+
+command: sueldo (/sueldo) variable: anyone
+$nomention
+$title[Daily Reward]
+$description[Your daily reward is **$$random[250000;106000]**]
+$footer[Requested by $username]
+$color[78eab8]
+$cooldown[3d; This is a wage command, meaning it can only be executed...well, wage. Try again in %time%.]
+$setUserVar[money;$sum[$getUserVar[money];$random[250000;106000]]]
+
+command: kick (/kick) variable: anyone
+$nomention
+$author[kick]
+$authoricon[@userAvatar[$authorID]]
+$description[<@$authorID> **Expulso a** `$message[1]`
+Razon: $noMentionMessage]
+$kickmention[$noMentionMessage]
+$color[#FF0000]
+$onlyIf[$mentioned[<]!=;<a:Error:774763980068749312> *Error* necesitas mencionar a un usuario.]
+$onlyPerms[kick;<a:Error:774763980068749312> *Error* No tienes los permisos suficientes para hacer eso.]
+$argsCheck[>2;<a:Error:774763980068749312> *Error* necesitas dar una **razon**]
+$replyIn[2s]
+
+command: ticket (!new) variable: anyone
+$nomention
+$newTicket[categoryID/name;No subject has been given;Hello <@$authorID>!
+
+Thanks for creating a Ticket!
+
+Please, write down your whole problem. Our anwer time should be around 10 min if we are on.
+
+**Subject**
+{subject};Your ticket has been created {channel};**error** please try again]
+
