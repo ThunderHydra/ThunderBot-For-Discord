@@ -530,11 +530,6 @@ command: guess number (/guessnumber) variable: anyone
 $nomention
 $replaceText [$replaceText[$checkCondition[$random[0;10]==$message[1]];true;You guessed$message[1] , and  I  said $random[0;10]You guessed right! ;1]
  ;false;You guessed $message[1] , and I said $random[0;10], you guessed wrong. ;1]
- 
- command: buyfood (/buyfood) variable: FOOD
- $setUserVar[money;$sum[$getUserVar[money];-100]]
-$setUserVar[FOOD;$sum[$getUserVar[FOOD];1]] You have bought FOOD!
-$cooldown[2h;Dont people hate spend? come back in %time% to buy food again.]
 
 command: buyfood (/buyfood) variable: FOOD
 $setUserVar[money;$sum[$getUserVar[money];-100]]
